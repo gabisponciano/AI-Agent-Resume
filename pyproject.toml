@@ -16,4 +16,5 @@ dependencies = [
     "pypdf2>=3.0.1",
     "python-multipart>=0.0.26",
     "requests>=2.33.1",
+    "streamlit>=1.56.0",
 ]

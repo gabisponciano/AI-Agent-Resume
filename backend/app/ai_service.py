@@ -7,7 +7,7 @@ from langchain_core.prompts import ChatPromptTemplate
 
 db_path = "vector_db"
 
-prompt_template = """You are an expert in IT professional resumes.
+prompt_template = """You are an expert in resumes.
 
 Answer the user's question: {question}
 
@@ -16,7 +16,7 @@ Based on the following information:
 
 If you cannot find the answer, say that you don't know.
 
-Be simple and direct.
+Be simple and direct. If the name appear on the context, use it on beginning of the answer.
 """
 def ai_ask(question):
       embeddings = OllamaEmbeddings(model="nomic-embed-text")
